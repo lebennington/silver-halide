@@ -1,0 +1,811 @@
+[
+  {
+    "id": 1,
+    "titleCn": "花样年华",
+    "titleOrig": "In the Mood for Love",
+    "year": 2000,
+    "countries": [
+      { "zh": "中国香港", "en": "Hong Kong" },
+      { "zh": "法国", "en": "France" }
+    ],
+    "runtimeMin": 98,
+    "aspectRatio": "1.66:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "爱情", "en": "Romance" }
+    ],
+    "credits": {
+      "director": [{ "zh": "王家卫", "en": "Wong Kar-wai" }],
+      "writer": [{ "zh": "王家卫", "en": "Wong Kar-wai" }],
+      "cinematographer": [
+        { "zh": "杜可风", "en": "Christopher Doyle" },
+        { "zh": "李屏宾", "en": "Mark Lee Ping-bin" }
+      ],
+      "cast": [
+        { "zh": "张曼玉", "en": "Maggie Cheung" },
+        { "zh": "梁朝伟", "en": "Tony Leung Chiu-wai" },
+        { "zh": "潘迪华", "en": "Rebecca Pan" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0118694/",
+      "letterboxd": "https://letterboxd.com/film/in-the-mood-for-love/",
+      "douban": "https://movie.douban.com/subject/1291557/"
+    },
+    "watchedDate": "2026-10-24 夜场 / Late Night",
+    "medium": { "zh": "4K Criterion 胶片修复版", "en": "4K Criterion Restoration" },
+    "specs": "35mm 彩色 · Color · 1.66:1",
+    "myRating": 5,
+    "ratings": { "imdb": 8.1, "letterboxd": 4.4, "douban": 8.8 },
+    "quote": "“如果多一张船票，你会不会跟我一起走？”",
+    "synopsis": {
+      "zh": "1962年的香港，报馆编辑周慕云与贸易公司秘书苏丽珍在同一天搬进同一栋上海人聚居的公寓。在发现各自的伴侣有着不可告人的秘密后，两人在窄巷、雨夜与云吞面摊的擦肩中，陷入了一场克制而汹涌的暗恋。",
+      "en": "In 1962 Hong Kong, neighbors Chow Mo-wan and Su Li-zhen discover their respective spouses are having an affair, gradually developing a restrained, unspoken romance in rain-soaked alleys."
+    },
+    "review": {
+      "title": "框中之框与时间的灰烬：在逼仄雨巷里丈量遗憾",
+      "paragraphs": [
+        "重看《花样年华》，最令我屏息的依然是杜可风与李屏宾共同构筑的“遮蔽美学”。整部电影几乎没有一个彻底敞开的视野——门框、窗棂、走廊拐角、挂钟与雨帘将周慕云与苏丽珍紧紧锁在1.66:1的画幅深处。摄影机像是一个不忍惊扰又无法移开视线的窥探者，在梅林茂《Yumeji's Theme》华尔兹的每一次停顿里，记录下旗袍领口与香烟青烟之间那几毫米的距离。",
+        "王家卫将通常属于通俗剧的“出轨”母题彻底抽空，只留下两个体面人在道德与欲望夹缝中的自我彩排。他们预演离别、预演质问，唯独没有真正跨出那一步。当结尾吴哥窟的石洞封存了所有未竟之言，你会意识到：真正被王家卫拍下来的不是爱情本身，而是时间如何将一场炽热的震颤风化为不可触碰的遗迹。"
+      ]
+    },
+    "cameraNote": "大量使用中长焦镜头透过前景遮挡物（门框、镜面反射）进行窥视构图，配合抽帧慢镜与高饱和红绿暗调打光。"
+  },
+  {
+    "id": 2,
+    "titleCn": "潜行者",
+    "titleOrig": "Сталкер (Stalker)",
+    "year": 1979,
+    "countries": [{ "zh": "苏联", "en": "USSR" }],
+    "runtimeMin": 162,
+    "aspectRatio": "1.37:1",
+    "genres": [
+      { "zh": "科幻", "en": "Sci-Fi" },
+      { "zh": "哲学", "en": "Philosophy" },
+      { "zh": "剧情", "en": "Drama" }
+    ],
+    "credits": {
+      "director": [{ "zh": "安德烈·塔可夫斯基", "en": "Andrei Tarkovsky" }],
+      "writer": [{ "zh": "斯特鲁伽茨基兄弟", "en": "Arkady & Boris Strugatsky" }],
+      "cinematographer": [{ "zh": "亚历山大·克尼亚日斯基", "en": "Alexander Knyazhinsky" }],
+      "cast": [
+        { "zh": "亚历山大·凯达诺夫斯基", "en": "Alexander Kaidanovsky" },
+        { "zh": "阿纳托利·索洛尼岑", "en": "Anatoly Solonitsyn" },
+        { "zh": "尼古拉·格林科", "en": "Nikolai Grinko" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0079944/",
+      "letterboxd": "https://letterboxd.com/film/stalker/",
+      "douban": "https://movie.douban.com/subject/1292484/"
+    },
+    "watchedDate": "2026-10-21 深夜 / Midnight",
+    "medium": { "zh": "莫斯科电影制片厂 2K 修复蓝光", "en": "Mosfilm 2K Blu-ray" },
+    "specs": "35mm 琥珀单色与彩色 / Sepia & Color · 1.37:1",
+    "myRating": 5,
+    "ratings": { "imdb": 8.1, "letterboxd": 4.4, "douban": 8.8 },
+    "quote": "“当人把一切都交给信仰时，他才真正有了活下去的支点。”",
+    "synopsis": {
+      "zh": "在一片被称为“封锁区”的神秘荒原中心，据说存在一个能实现人类最深层愿望的房间。“潜行者”带领一位苦闷的作家与一位冷静的物理学家穿越铁丝网，踏上了一场没有外星生物、却直面灵魂深渊的朝圣。",
+      "en": "A guide leads a cynical Writer and a quiet Professor through an overgrown, post-industrial wasteland known as the 'Zone' toward a room said to grant a person's innermost desires."
+    },
+    "review": {
+      "title": "苔藓、水洼与长镜头：塔可夫斯基雕刻出的精神圣殿",
+      "paragraphs": [
+        "从工业废墟的焦褐单色胶片，骤然切入“封锁区”浓郁欲滴的湿润翠绿——这一处色彩转换无论看多少遍，依然具有宗教显圣般的震慑力。塔可夫斯基完全抛弃了类型片对奇观的依赖，三个人在荒草与积水管道中的每一次投掷螺母，都是对人类理性傲慢的一次拆卸。",
+        "全片最动人的时刻，是三人疲惫地躺在浅水中，摄影机贴着水面缓缓掠过生锈的注射器、硬币、圣像画与枪管。水流像时间的呼吸一样抚过人类文明的残骸。到了最后，没有人敢踏进那个能实现心愿的房间，因为我们最隐秘的潜意识往往连自己都不敢面对。真正的奇迹不在房间里，而在潜行者那位历经苦难却依然凝视镜头的妻子眼中。"
+      ]
+    },
+    "cameraNote": "极具催眠感的超长俯仰平移镜头，以水面反光、浓雾和微风吹拂草丛的微观运动构建“雕刻时光”的韵律。"
+  },
+  {
+    "id": 3,
+    "titleCn": "假面",
+    "titleOrig": "Persona",
+    "year": 1966,
+    "countries": [{ "zh": "瑞典", "en": "Sweden" }],
+    "runtimeMin": 85,
+    "aspectRatio": "1.37:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "心理", "en": "Psychological" },
+      { "zh": "先锋", "en": "Avant-Garde" }
+    ],
+    "credits": {
+      "director": [{ "zh": "英格玛·伯格曼", "en": "Ingmar Bergman" }],
+      "writer": [{ "zh": "英格玛·伯格曼", "en": "Ingmar Bergman" }],
+      "cinematographer": [{ "zh": "斯文·尼奎斯特", "en": "Sven Nykvist" }],
+      "cast": [
+        { "zh": "比比·安德松", "en": "Bibi Andersson" },
+        { "zh": "丽芙·乌曼", "en": "Liv Ullmann" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0060827/",
+      "letterboxd": "https://letterboxd.com/film/persona/",
+      "douban": "https://movie.douban.com/subject/1293758/"
+    },
+    "watchedDate": "2026-10-18 晚间 / Evening",
+    "medium": { "zh": "法罗岛纪念版 4K 胶片扫描", "en": "4K Film Scan" },
+    "specs": "35mm 黑白银盐 / B&W Silver Gelatin · 1.37:1",
+    "myRating": 5,
+    "ratings": { "imdb": 8.1, "letterboxd": 4.4, "douban": 8.7 },
+    "quote": "“你以为我不懂吗？那种空洞的绝望——哪怕戴着最诚实的面具，底下依然是一片虚无。”",
+    "synopsis": {
+      "zh": "舞台剧女演员伊丽莎白在一次演出中突然失语，精神科医生安排年轻护士阿尔玛陪她前往海滨别墅疗养。在孤岛般的海风与烈日下，倾诉者与倾听者的身份边界逐渐崩解，两张面孔最终重叠为一。",
+      "en": "A young nurse, Alma, is put in charge of Elisabeth Vogler, an actress who has abruptly fallen mute during a performance. At a remote seaside cottage, their identities begin to merge."
+    },
+    "review": {
+      "title": "当胶片在放映机中烧灼：两张面孔的吞噬与镜像",
+      "paragraphs": [
+        "伯格曼在《假面》开篇便直接将放映机的碳弧灯、齿孔与燃烧断裂的胶片甩在观众脸上，宣告这是一部关于电影本体与人格瓦解的解剖实验。斯文·尼奎斯特的高反差黑白摄影将法罗岛的乱石海岸与两个女人的面部轮廓拍得如同大理石雕塑般锋利。",
+        "片中那段著名的双视角独白——同样一段话，先对着失语的伊丽莎白拍一遍，再对着崩溃的阿尔玛拍一遍，最后将两人的半张脸严丝合缝地合成一张奇异而骇人的面孔。沉默在这里拥有比语言更残酷的权力：倾听者像海绵一样吸干了诉说者的秘密，直到自我与他人彻底混淆。"
+      ]
+    },
+    "cameraNote": "极致的大特写肖像构图，利用强烈的侧逆光分割面部明暗，并在中段直接置入胶片烧毁断裂的元电影视觉冲击。"
+  },
+  {
+    "id": 4,
+    "titleCn": "德州，巴黎",
+    "titleOrig": "Paris, Texas",
+    "year": 1984,
+    "countries": [
+      { "zh": "西德", "en": "W. Germany" },
+      { "zh": "法国", "en": "France" },
+      { "zh": "美国", "en": "USA" }
+    ],
+    "runtimeMin": 145,
+    "aspectRatio": "1.66:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "公路", "en": "Road Movie" }
+    ],
+    "credits": {
+      "director": [{ "zh": "维姆·文德斯", "en": "Wim Wenders" }],
+      "writer": [
+        { "zh": "山姆·夏普德", "en": "Sam Shepard" },
+        { "zh": "L.M. Kit Carson", "en": "L.M. Kit Carson" }
+      ],
+      "cinematographer": [{ "zh": "罗比·穆勒", "en": "Robby Müller" }],
+      "cast": [
+        { "zh": "哈利·戴恩·斯坦通", "en": "Harry Dean Stanton" },
+        { "zh": "娜塔莎·金斯基", "en": "Nastassja Kinski" },
+        { "zh": "迪恩·斯托克韦尔", "en": "Dean Stockwell" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0087884/",
+      "letterboxd": "https://letterboxd.com/film/paris-texas/",
+      "douban": "https://movie.douban.com/subject/1292329/"
+    },
+    "watchedDate": "2026-10-15 夜间 / Night",
+    "medium": { "zh": "戛纳40周年 4K 修复版", "en": "Cannes 40th 4K Restoration" },
+    "specs": "35mm 彩色 · Color · 1.66:1",
+    "myRating": 5,
+    "ratings": { "imdb": 8.1, "letterboxd": 4.4, "douban": 8.8 },
+    "quote": "“我认识这两个人……他们彼此深爱，却被自己的恐惧困在了沙漠里。”",
+    "synopsis": {
+      "zh": "戴着红色棒球帽的男人特拉维斯独自走出德州荒漠，失忆且沉默了四年。在与年幼的儿子重新建立信任后，他们开着皮卡驶向休斯敦，在单向透视镜的窥视房间里，找到了他失散多年的妻子简。",
+      "en": "Travis Henderson, an aimless drifter who has been missing for four years, wanders out of the desert and reconnects with his young son before setting out to find his estranged wife in Houston."
+    },
+    "review": {
+      "title": "荒漠红帽与单向玻璃：美国旷野上最孤独的告别",
+      "paragraphs": [
+        "莱·库德（Ry Cooder）的滑棒吉他甫一响起，罗比·穆勒镜头下那片苍凉的莫哈韦沙漠便有了直抵人心的孤寂温度。文德斯用欧洲局外人的诗意目光，把美国的公路、霓虹招牌、立交桥拍成了一座巨大的现代迷宫。",
+        "影片最后三十分钟在窥视秀小隔间里的对话，是影史最伟大的场面调度之一。隔着一面单向反光玻璃，特拉维斯背对简讲完那段关于爱与占有欲的往事；当灯光调整，两人的倒影在玻璃上短暂重合。他用成全母子重逢的方式完成了救赎，然后独自驾车驶入绿意幽暗的夜色。"
+      ]
+    },
+    "cameraNote": "罗比·穆勒标志性的霓虹翡翠绿与荒漠琥珀金撞色，利用单向镜面反射完成双人肖像的灵魂叠印。"
+  },
+  {
+    "id": 5,
+    "titleCn": "燃烧女子的肖像",
+    "titleOrig": "Portrait de la jeune fille en feu / Portrait of a Lady on Fire",
+    "year": 2019,
+    "countries": [{ "zh": "法国", "en": "France" }],
+    "runtimeMin": 122,
+    "aspectRatio": "1.85:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "爱情", "en": "Romance" },
+      { "zh": "历史", "en": "Period" }
+    ],
+    "credits": {
+      "director": [{ "zh": "瑟琳·席安玛", "en": "Céline Sciamma" }],
+      "writer": [{ "zh": "瑟琳·席安玛", "en": "Céline Sciamma" }],
+      "cinematographer": [{ "zh": "克莱尔·马东", "en": "Claire Mathon" }],
+      "cast": [
+        { "zh": "诺米·梅兰特", "en": "Noémie Merlant" },
+        { "zh": "阿黛拉·哈内尔", "en": "Adèle Haenel" },
+        { "zh": "Luàna Bajrami", "en": "Luàna Bajrami" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt8613070/",
+      "letterboxd": "https://letterboxd.com/film/portrait-of-a-lady-on-fire/",
+      "douban": "https://movie.douban.com/subject/30257175/"
+    },
+    "watchedDate": "2026-10-12 晚间 / Evening",
+    "medium": { "zh": "影院重映 4K 数字拷贝", "en": "4K DCP Screening" },
+    "specs": "8K 数字转制 35mm 质感 / 35mm Emulation · 1.85:1",
+    "myRating": 4.5,
+    "ratings": { "imdb": 8.1, "letterboxd": 4.4, "douban": 8.6 },
+    "quote": "“不要后悔，要记住。（Ne regrette pas. Souviens-toi.）”",
+    "synopsis": {
+      "zh": "18世纪末的布列塔尼孤岛，女画家玛丽安受雇在不被察觉的情况下，为抗拒联姻的贵族小姐艾洛伊兹绘制出嫁肖像。在观察与被观察的对视中，两人共同度过了短暂而自由的十余日。",
+      "en": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman without her knowing."
+    },
+    "review": {
+      "title": "凝视的平等与第28页的自画像：用记忆战胜俄耳甫斯的回眸",
+      "paragraphs": [
+        "席安玛与摄影师克莱尔·马东构建了一种完全去除了权力倾轧的“双向凝视”。当艾洛伊兹对画家说出“当你看着我的时候，你以为我在看谁？”时，传统绘画史中主体与客体的界限瞬间消融。全片几乎没有任何背景配乐，只有画笔摩擦亚麻布、海浪拍击礁石与壁炉柴火的噼啪声。",
+        "正因为整部电影在听觉上如此克制，篝火晚会上的无伴奏人声合唱与结尾音乐厅里维瓦尔第《四季·夏》的骤然爆发，才具有令人热泪盈眶的摧毁力。在长达两分钟的推轨长镜头里，艾洛伊兹胸口起伏的泪水证明了：那团曾点燃裙摆的火，从未熄灭。"
+      ]
+    },
+    "cameraNote": "自然光与烛光照明营造古典油画质感，全片无配乐设计使结尾《夏》暴风雨乐章的单镜头长特写极具情绪张力。"
+  },
+  {
+    "id": 6,
+    "titleCn": "八部半",
+    "titleOrig": "8½ (Otto e mezzo)",
+    "year": 1963,
+    "countries": [
+      { "zh": "意大利", "en": "Italy" },
+      { "zh": "法国", "en": "France" }
+    ],
+    "runtimeMin": 138,
+    "aspectRatio": "1.85:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "奇幻", "en": "Fantasy" },
+      { "zh": "元电影", "en": "Metacinema" }
+    ],
+    "credits": {
+      "director": [{ "zh": "费德里科·费里尼", "en": "Federico Fellini" }],
+      "writer": [
+        { "zh": "费德里科·费里尼", "en": "Federico Fellini" },
+        { "zh": "恩尼奥·弗拉亚诺", "en": "Ennio Flaiano" },
+        { "zh": "Tullio Pinelli", "en": "Tullio Pinelli" }
+      ],
+      "cinematographer": [{ "zh": "吉安尼·迪·维南佐", "en": "Gianni Di Venanzo" }],
+      "cast": [
+        { "zh": "马塞洛·马斯楚安尼", "en": "Marcello Mastroianni" },
+        { "zh": "克劳迪娅·卡汀娜", "en": "Claudia Cardinale" },
+        { "zh": "阿努克·艾梅", "en": "Anouk Aimée" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0056801/",
+      "letterboxd": "https://letterboxd.com/film/8-half/",
+      "douban": "https://movie.douban.com/subject/1294417/"
+    },
+    "watchedDate": "2026-10-09 晚间 / Evening",
+    "medium": { "zh": "博洛尼亚电影资料馆 4K 修复版", "en": "Cineteca di Bologna 4K" },
+    "specs": "35mm 黑白宽银幕 / B&W Widescreen · 1.85:1",
+    "myRating": 5,
+    "ratings": { "imdb": 8.0, "letterboxd": 4.3, "douban": 8.6 },
+    "quote": "“人生是一场盛大的节日，让我们一起度过吧！”",
+    "synopsis": {
+      "zh": "陷入创作枯竭的著名导演圭多在温泉疗养院筹备新片，制片人、妻子、情妇、影评人与剧组人员轮番围追堵截。在现实焦虑、童年记忆与白日梦境的交错中，他干脆将这场混乱本身拍成了一部电影。",
+      "en": "Harried film director Guido Anselmi retreats into his memories, dreams, and fantasies while struggling to overcome a severe creative block during the pre-production of his next movie."
+    },
+    "review": {
+      "title": "把创作的荒芜变成马戏团的狂欢：费里尼的造梦自白",
+      "paragraphs": [
+        "开场那段著名的塞车噩梦——圭多在幽闭的车厢里窒息，随后飘向高空又被绳索猛地拽回海滩——精准概括了所有创作者的困境。费里尼的天才之处在于，他毫不掩饰自己的混乱、虚荣与怯懦，反而用最华丽的场面调度将“拍不出电影”本身变成了一座流光溢彩的迷宫。",
+        "吉安尼·迪·维南佐的黑白摄影有着令人目眩的明暗张力：温泉疗养院刺眼的过曝白光与童年修道院深邃的暗影交替出现。当结尾巨大的火箭发射架下，圭多生命中所有真实与虚构的人物手拉手围成圆圈跳起尼诺·罗塔的进行曲时，电影完成了对生活的最高礼赞。"
+      ]
+    },
+    "cameraNote": "极具表现主义色彩的高光过曝与广角运动镜头，无缝衔接现实场景、记忆闪回与超现实梦境。"
+  },
+  {
+    "id": 7,
+    "titleCn": "悲情城市",
+    "titleOrig": "A City of Sadness",
+    "year": 1989,
+    "countries": [{ "zh": "中国台湾", "en": "Taiwan" }],
+    "runtimeMin": 157,
+    "aspectRatio": "1.37:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "历史", "en": "History" },
+      { "zh": "家庭", "en": "Family" }
+    ],
+    "credits": {
+      "director": [{ "zh": "侯孝贤", "en": "Hou Hsiao-hsien" }],
+      "writer": [
+        { "zh": "吴念真", "en": "Wu Nien-jen" },
+        { "zh": "朱天文", "en": "Chu Tien-wen" }
+      ],
+      "cinematographer": [{ "zh": "陈怀恩", "en": "Chen Huai-en" }],
+      "cast": [
+        { "zh": "梁朝伟", "en": "Tony Leung Chiu-wai" },
+        { "zh": "陈松勇", "en": "Chen Sung-young" },
+        { "zh": "辛树芬", "en": "Hsin Shu-fen" },
+        { "zh": "高捷", "en": "Jack Kao" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0096908/",
+      "letterboxd": "https://letterboxd.com/film/a-city-of-sadness/",
+      "douban": "https://movie.douban.com/subject/1302090/"
+    },
+    "watchedDate": "2026-10-06 下午 / Matinee",
+    "medium": { "zh": "35mm 胶片拷贝展映", "en": "35mm Archival Print" },
+    "specs": "35mm 彩色 · Color · 1.37:1",
+    "myRating": 5,
+    "ratings": { "imdb": 8.1, "letterboxd": 4.3, "douban": 9.0 },
+    "quote": "“同运的樱花，尽管飞扬的去吧。我随后就来，大家都一样。”",
+    "synopsis": {
+      "zh": "1945年日本投降到1949年国民政府迁台期间，基隆林氏家族四兄弟在时代洪流中经历了迥异的命运：大哥死于街头冲突，三哥疯癫，唯有自幼失聪的四弟林文清用照相机与笔谈静静见证家族的凋零。",
+      "en": "The tumultuous fate of the Lin family in Keelung, Taiwan between 1945 and 1949, witnessed quietly through the camera lens and written notes of the deaf-mute youngest brother Wen-ching."
+    },
+    "review": {
+      "title": "远景固定长镜头下的历史尘埃：沉默者的照相馆与家书",
+      "paragraphs": [
+        "侯孝贤面对宏大惨烈的历史动荡，选择了最节制也最慈悲的距离——固定机位的中远景长镜头。摄影机从不主动推近煽情，而是安静地守在九份山城的饭桌旁、医院走廊尽头与照相馆的布景前，任由人物进出画框，任由收音机里的广播与闽南语、日语、上海话交织。",
+        "梁朝伟饰演的聋哑四弟文清与宽美之间的笔谈字幕卡，像是喧嚣时代里仅存的净土。当文清在被捕前与妻儿拍下最后一张全家福，快门按下的那一刻，个体的温情与时代的残酷同时凝固在1.37:1的相纸上，重若千钧。"
+      ]
+    },
+    "cameraNote": "标志性的深焦固定机位长镜头与空间留白，辅以默片式笔谈字幕卡与画外自然音响叙事。"
+  },
+  {
+    "id": 8,
+    "titleCn": "穆赫兰道",
+    "titleOrig": "Mulholland Drive",
+    "year": 2001,
+    "countries": [
+      { "zh": "美国", "en": "USA" },
+      { "zh": "法国", "en": "France" }
+    ],
+    "runtimeMin": 147,
+    "aspectRatio": "1.85:1",
+    "genres": [
+      { "zh": "悬疑", "en": "Mystery" },
+      { "zh": "惊悚", "en": "Thriller" },
+      { "zh": "梦境", "en": "Neo-Noir" }
+    ],
+    "credits": {
+      "director": [{ "zh": "大卫·林奇", "en": "David Lynch" }],
+      "writer": [{ "zh": "大卫·林奇", "en": "David Lynch" }],
+      "cinematographer": [{ "zh": "彼得·德明", "en": "Peter Deming" }],
+      "cast": [
+        { "zh": "娜奥米·沃茨", "en": "Naomi Watts" },
+        { "zh": "劳拉·哈灵", "en": "Laura Harring" },
+        { "zh": "贾斯汀·塞洛克斯", "en": "Justin Theroux" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0166924/",
+      "letterboxd": "https://letterboxd.com/film/mulholland-drive/",
+      "douban": "https://movie.douban.com/subject/1292217/"
+    },
+    "watchedDate": "2026-10-03 午夜 / Midnight",
+    "medium": { "zh": "StudioCanal 4K HDR 修复版", "en": "4K UHD HDR" },
+    "specs": "35mm 彩色 · Color · 1.85:1",
+    "myRating": 5,
+    "ratings": { "imdb": 7.9, "letterboxd": 4.3, "douban": 8.4 },
+    "quote": "“没有乐队！这只是一盘录音带……一切都是幻觉。（No hay banda!）”",
+    "synopsis": {
+      "zh": "一场发生在蜿蜒穆赫兰道上的午夜车祸，让失忆的黑发女人丽塔潜入初来好莱坞追梦的金发女孩贝蒂家中。当她们在寂静剧场找到打开蓝色神秘盒子的钥匙时，梦境与残酷现实轰然倒置。",
+      "en": "After a midnight car wreck on winding Mulholland Drive renders a woman amnesiac, she and a hopeful Hollywood newcomer search for clues across Los Angeles in a twisting venture beyond dreams and reality."
+    },
+    "review": {
+      "title": "蓝色钥匙开启的潜意识剧场：好莱坞霓虹背后的心碎梦魇",
+      "paragraphs": [
+        "大卫·林奇在《穆赫兰道》中完成了一次完美的心理结构魔术：前两个小时里所有看似荒诞、脱节的黑色电影线索，在蓝色盒子落地的瞬间，全部化作戴安娜因嫉妒、挫败与悔恨而编织出的自欺梦境。好莱坞不仅是一个地理空间，更是一台吞噬欲望与制造幻觉的机器。",
+        "在“寂静剧场（Club Silencio）”的那场戏里，歌者在宣布一切皆是录音假唱后突然倒地，歌声却依然回荡在蓝色天鹅绒幕布间。贝蒂与丽塔在台下痛哭失声——因为林奇告诉我们：哪怕明知电影与梦境都是虚假的幻觉，其中流淌的悲伤与爱意却是真实得令人心碎。"
+      ]
+    },
+    "cameraNote": "幽暗浮动的主观推轨镜头与低频工业噪音设计，利用冷冽霓虹蓝与好莱坞暖金灯光构建梦魇氛围。"
+  },
+  {
+    "id": 9,
+    "titleCn": "法兰西特派",
+    "titleOrig": "The French Dispatch",
+    "year": 2021,
+    "countries": [
+      { "zh": "美国", "en": "USA" },
+      { "zh": "德国", "en": "Germany" }
+    ],
+    "runtimeMin": 108,
+    "aspectRatio": "1.37:1 & 2.39:1",
+    "genres": [
+      { "zh": "喜剧", "en": "Comedy" },
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "选集", "en": "Anthology" }
+    ],
+    "credits": {
+      "director": [{ "zh": "韦斯·安德森", "en": "Wes Anderson" }],
+      "writer": [
+        { "zh": "韦斯·安德森", "en": "Wes Anderson" },
+        { "zh": "罗曼·科波拉", "en": "Roman Coppola" },
+        { "zh": "Hugo Guinness", "en": "Hugo Guinness" }
+      ],
+      "cinematographer": [{ "zh": "罗伯特·约曼", "en": "Robert D. Yeoman" }],
+      "cast": [
+        { "zh": "比尔·默瑞", "en": "Bill Murray" },
+        { "zh": "本尼西奥·德尔·托罗", "en": "Benicio del Toro" },
+        { "zh": "蒂尔达·斯文顿", "en": "Tilda Swinton" },
+        { "zh": "弗兰西斯·麦克多蒙德", "en": "Frances McDormand" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt8847712/",
+      "letterboxd": "https://letterboxd.com/film/the-french-dispatch/",
+      "douban": "https://movie.douban.com/subject/30306570/"
+    },
+    "watchedDate": "2026-09-29 晚间 / Evening",
+    "medium": { "zh": "蓝光原盘重看", "en": "Blu-ray Remux" },
+    "specs": "35mm 黑白与彩色多画幅切换 / B&W & Color Multi-Aspect",
+    "myRating": 4.5,
+    "ratings": { "imdb": 7.1, "letterboxd": 3.7, "douban": 7.9 },
+    "quote": "“试着写成你是故意那样写的。（Try to make it sound like you wrote it that way on purpose.）”",
+    "synopsis": {
+      "zh": "驻扎在法国虚构小镇“安努伊”的美国杂志社主编突然辞世，按照遗嘱，编辑部出版最后一期纪念特刊：由三篇风格迥异的特稿、一篇城市导览与一篇讣告组成。",
+      "en": "A love letter to journalists set in an outpost of an American newspaper in a fictional twentieth-century French city that brings to life a collection of stories published in 'The French Dispatch'."
+    },
+    "review": {
+      "title": "献给纸媒黄金时代与新浪潮的情书：强迫症构图里的乡愁",
+      "paragraphs": [
+        "如果说《布达佩斯大饭店》是一座精密的怀旧音乐盒，《法兰西特派》就是韦斯·安德森用1.37:1学院画幅、高反差黑白胶片、突然炸裂的彩色画面以及法式手绘动画拼贴出的一本动态《纽约客》杂志。每一帧画面都塞满了文字、脚注与戏剧布景般的横移调度。",
+        "看似戏谑怪诞的表象下，藏着对漂泊异乡者（Expat）最温柔的体恤。在最后一个故事结尾，杰弗里·怀特饰演的美食记者在谈论囚车里的异乡厨师时，说到那句“也许我们都在寻找一个能留下来吃晚饭的地方”，精密机械般的对称构图里突然涌出难以言喻的孤独。"
+      ]
+    },
+    "cameraNote": "在1.37:1黑白胶片与2.39:1宽银幕彩色之间高频跳切，采用极致的中心对称构图与90度机械横移摇镜。"
+  },
+  {
+    "id": 10,
+    "titleCn": "坠落的审判",
+    "titleOrig": "Anatomie d'une chute / Anatomy of a Fall",
+    "year": 2023,
+    "countries": [{ "zh": "法国", "en": "France" }],
+    "runtimeMin": 152,
+    "aspectRatio": "1.85:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "悬疑", "en": "Mystery" },
+      { "zh": "法庭", "en": "Courtroom" }
+    ],
+    "credits": {
+      "director": [{ "zh": "茹斯汀·特里耶", "en": "Justine Triet" }],
+      "writer": [
+        { "zh": "茹斯汀·特里耶", "en": "Justine Triet" },
+        { "zh": "阿图尔·阿拉里", "en": "Arthur Harari" }
+      ],
+      "cinematographer": [{ "zh": "西蒙·博菲尔斯", "en": "Simon Beaufils" }],
+      "cast": [
+        { "zh": "桑德拉·惠勒", "en": "Sandra Hüller" },
+        { "zh": "斯万·阿劳德", "en": "Swann Arlaud" },
+        { "zh": "米洛·马查多·格拉纳", "en": "Milo Machado Graner" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt17009710/",
+      "letterboxd": "https://letterboxd.com/film/anatomy-of-a-fall/",
+      "douban": "https://movie.douban.com/subject/35660795/"
+    },
+    "watchedDate": "2026-09-25 晚间 / Evening",
+    "medium": { "zh": "4K 数字蓝光收藏版", "en": "4K Collector's Blu-ray" },
+    "specs": "35mm 质感数字摄影 / Digital 35mm Look · 1.85:1",
+    "myRating": 4.5,
+    "ratings": { "imdb": 7.7, "letterboxd": 4.1, "douban": 8.6 },
+    "quote": "“有时候，为了继续走下去，我们必须在一个没有绝对真相的地方做出选择。”",
+    "synopsis": {
+      "zh": "在阿尔卑斯山与世隔绝的雪山木屋前，丈夫塞缪尔从阁楼坠亡。德国女作家桑德拉被控谋杀，在盲人儿子丹尼尔作为唯一关键证人的法庭庭审中，一段婚姻内部的裂痕被放在显微镜下层层解剖。",
+      "en": "A German writer is put on trial for the suspicious fatal fall of her husband from their isolated Alpine chalet, with their half-blind son facing a moral dilemma as the sole witness."
+    },
+    "review": {
+      "title": "雪山木屋里的罗生门：当婚姻的真相在语言中失重",
+      "paragraphs": [
+        "特里耶用极其冷峻、近乎纪实的手持与急推变焦镜头，颠覆了传统法庭类型片的叙事期待。观众起初以为自己在看一场寻找物理真相（他杀还是自杀）的推理剧，却在庭审播放那段夫妻争吵录音时猛然惊觉：真正被推上审判席的，是亲密关系中无法量化的权力失衡、牺牲感与怨怼。",
+        "桑德拉·惠勒贡献了近年来极具说服力的表演——她用非母语的法语和英语为自己辩护，冷静得近乎冷酷，却又在每一个细微的停顿里流露出疲惫。最终视障儿子在法庭上那段关于“当证据不足时，必须凭信仰做出决定”的证词，让这部电影从司法悬疑升华为对现代人沟通困境的深刻哲思。"
+      ]
+    },
+    "cameraNote": "手持纪实跟拍与希区柯克式快速变焦交替，利用刺眼的阿尔卑斯雪地反光与幽暗木屋内部形成心理压迫。"
+  },
+  {
+    "id": 11,
+    "titleCn": "镜子",
+    "titleOrig": "Зеркало / Mirror",
+    "year": 1975,
+    "countries": [{ "zh": "苏联", "en": "USSR" }],
+    "runtimeMin": 106,
+    "aspectRatio": "1.37:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "传记", "en": "Biography" },
+      { "zh": "诗电影", "en": "Poetic Cinema" }
+    ],
+    "credits": {
+      "director": [{ "zh": "安德烈·塔可夫斯基", "en": "Andrei Tarkovsky" }],
+      "writer": [
+        { "zh": "安德烈·塔可夫斯基", "en": "Andrei Tarkovsky" },
+        { "zh": "亚历山大·米沙林", "en": "Aleksandr Misharin" }
+      ],
+      "cinematographer": [{ "zh": "格奥尔基·列尔贝格", "en": "Georgi Rerberg" }],
+      "cast": [
+        { "zh": "玛格丽特·捷列霍娃", "en": "Margarita Terekhova" },
+        { "zh": "伊格纳特·达尼尔采夫", "en": "Ignat Daniltsev" },
+        { "zh": "奥列格·扬科夫斯基", "en": "Oleg Yankovsky" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0072443/",
+      "letterboxd": "https://letterboxd.com/film/mirror/",
+      "douban": "https://movie.douban.com/subject/1293927/"
+    },
+    "watchedDate": "2026-09-18 深夜 / Late Night",
+    "medium": { "zh": "35mm 胶片拷贝展映", "en": "35mm Archival Print" },
+    "specs": "彩色与黑白交替 / Color & B&W · 1.37:1",
+    "myRating": 5,
+    "ratings": { "imdb": 8.0, "letterboxd": 4.4, "douban": 8.9 },
+    "quote": "“言语无法表达人所感受到的一切，言语总是显得苍白无力。”",
+    "synopsis": {
+      "zh": "垂危的诗人在病榻上回溯自己的一生：战火年代乡间木屋里等待父亲归来的母亲、童年梦境中拂过荞麦田的狂风、印刷厂里滂沱的室内大雨，以及与妻子、儿子之间镜像般重叠的记忆。",
+      "en": "A dying poet in his forties recalls his childhood in pre-war and wartime Russia, weaving personal memories, dreams, newsreel footage, and Arseny Tarkovsky's poetry into a stream of consciousness."
+    },
+    "review": {
+      "title": "风吹过荞麦田的瞬间：时间在记忆的镜面中结晶",
+      "paragraphs": [
+        "《镜子》彻底抛弃了传统的戏剧因果链条，将电影还原为纯粹的意识流与感官记忆。塔可夫斯基让玛格丽特·捷列霍娃同时饰演青年的母亲与成年的妻子，这一选角本身就是对家族创伤与情感轮回最幽微的视觉赋形。",
+        "每当老塔父亲阿尔谢尼·塔可夫斯基低沉的俄语诗歌朗诵响起，画面便仿佛获得了某种神圣的重力。无论是木屋前突然掀起的阵风，还是牛奶洒落在暗室桌面的慢镜头，都在证明电影不是用来讲故事的工具，而是直接雕刻时光的银盐器皿。"
+      ]
+    },
+    "cameraNote": "大量自然风与水元素的运动长镜头，在黑白、褐色调与高饱和彩色胶片之间自由游走。"
+  },
+  {
+    "id": 12,
+    "titleCn": "四百击",
+    "titleOrig": "Les Quatre Cents Coups / The 400 Blows",
+    "year": 1959,
+    "countries": [{ "zh": "法国", "en": "France" }],
+    "runtimeMin": 99,
+    "aspectRatio": "2.35:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "成长", "en": "Coming-of-Age" }
+    ],
+    "credits": {
+      "director": [{ "zh": "弗朗索瓦·特吕弗", "en": "François Truffaut" }],
+      "writer": [
+        { "zh": "弗朗索瓦·特吕弗", "en": "François Truffaut" },
+        { "zh": "马塞尔·穆西", "en": "Marcel Moussy" }
+      ],
+      "cinematographer": [{ "zh": "亨利·德卡埃", "en": "Henri Decaë" }],
+      "cast": [
+        { "zh": "让-皮埃尔·利奥德", "en": "Jean-Pierre Léaud" },
+        { "zh": "克莱尔·莫里耶", "en": "Claire Maurier" },
+        { "zh": "阿尔贝·雷米", "en": "Albert Rémy" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0053198/",
+      "letterboxd": "https://letterboxd.com/film/the-400-blows/",
+      "douban": "https://movie.douban.com/subject/1293323/"
+    },
+    "watchedDate": "2026-09-12 晚间 / Evening",
+    "medium": { "zh": "Criterion 4K UHD 修复版", "en": "Criterion 4K UHD" },
+    "specs": "Dyaliscope 黑白宽银幕 / B&W Widescreen · 2.35:1",
+    "myRating": 5,
+    "ratings": { "imdb": 8.1, "letterboxd": 4.3, "douban": 8.9 },
+    "quote": "“安托万，你到底为什么要逃学？”",
+    "synopsis": {
+      "zh": "巴黎少年安托万在学校的严苛管教与家庭的冷漠虚伪之间无处容身。在一次次逃学、游荡、偷打字机被捕并被送进少管所后，他终于在放风时冲破铁丝网，一路奔向从未见过的大海。",
+      "en": "Misunderstood by his parents and tormented by his strict teacher in 1950s Paris, young Antoine Doinel skips school, turns to petty rebellion, and ultimately runs toward the open sea."
+    },
+    "review": {
+      "title": "奔向大海的定格：法国新浪潮最自由的少年回眸",
+      "paragraphs": [
+        "特吕弗在这部半自传体处女作中，把摄影机从僵化的摄影棚解放到了寒冷清晨的巴黎街头。亨利·德卡埃用2.35:1的黑白宽银幕捕捉安托万在游乐场旋转滚筒里的失重欢笑，也记录下他在少管所审讯室里直视镜头的坦诚与迷茫。",
+        "全片结尾那段长达数分钟的跟拍长镜头堪称影史奇迹：安托万穿过田野与沙滩，踏入冰冷的海浪，然后转身面向摄影机——画面骤然推近并定格在他那双混合着倔强、孤独与诘问的眼睛上，那一刻整个现代电影的大门被彻底推开。"
+      ]
+    },
+    "cameraNote": "巴黎实景自然光拍摄与结尾海滩超长横向跟拍，最终以光学变焦定格完成影史经典收束。"
+  },
+  {
+    "id": 13,
+    "titleCn": "精疲力尽",
+    "titleOrig": "À bout de souffle / Breathless",
+    "year": 1960,
+    "countries": [{ "zh": "法国", "en": "France" }],
+    "runtimeMin": 90,
+    "aspectRatio": "1.37:1",
+    "genres": [
+      { "zh": "犯罪", "en": "Crime" },
+      { "zh": "爱情", "en": "Romance" },
+      { "zh": "新浪潮", "en": "Nouvelle Vague" }
+    ],
+    "credits": {
+      "director": [{ "zh": "让-吕克·戈达尔", "en": "Jean-Luc Godard" }],
+      "writer": [
+        { "zh": "让-吕克·戈达尔", "en": "Jean-Luc Godard" },
+        { "zh": "弗朗索瓦·特吕弗", "en": "François Truffaut" }
+      ],
+      "cinematographer": [{ "zh": "拉乌尔·库塔尔", "en": "Raoul Coutard" }],
+      "cast": [
+        { "zh": "让-保罗·贝尔蒙多", "en": "Jean-Paul Belmondo" },
+        { "zh": "珍·茜宝", "en": "Jean Seberg" },
+        { "zh": "达尼埃尔·布朗热", "en": "Daniel Boulanger" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0053472/",
+      "letterboxd": "https://letterboxd.com/film/breathless/",
+      "douban": "https://movie.douban.com/subject/1292529/"
+    },
+    "watchedDate": "2026-09-05 夜场 / Night",
+    "medium": { "zh": "StudioCanal 4K 胶片修复版", "en": "4K Restoration" },
+    "specs": "Ilford HPS 高感黑白胶片 / B&W · 1.37:1",
+    "myRating": 4.5,
+    "ratings": { "imdb": 7.7, "letterboxd": 4.1, "douban": 8.4 },
+    "quote": "“在悲伤与虚无之间，我选择虚无。”",
+    "synopsis": {
+      "zh": "崇拜亨弗莱·鲍嘉的浪荡通缉犯米歇尔偷车枪杀警察后逃往巴黎，与在香榭丽舍大街售卖《纽约先驱论坛报》的美国女孩帕特丽夏重逢，在狭小的旅馆房间与街头追逐中度过最后的亡命时光。",
+      "en": "A small-time thief steals a car and impulsively murders a motorcycle policeman. Wanted by the authorities, he reunites with an American journalism student in Paris."
+    },
+    "review": {
+      "title": "跳接的爵士乐：在香榭丽舍大街把古典剪辑法则撕碎",
+      "paragraphs": [
+        "戈达尔和摄影师库塔尔把摄影机藏在邮政手推车里，用照相馆的高感光度胶卷在巴黎街头抓拍。那些曾被好莱坞视为失误的“跳接”（Jump Cut），在这里却化作了如迈尔斯·戴维斯爵士乐般即兴、躁动、充满呼吸感的现代节奏。",
+        "中段米歇尔与帕特丽夏在窄小卧室里长达二十多分钟的闲聊，没有任何戏剧性推进，却把青年男女之间试探、疏离与浪漫的张力拍得妙趣横生。珍·茜宝剪着男孩般的短发走过阳光斑驳的林荫道，成了不可复制的时代圣像。"
+      ]
+    },
+    "cameraNote": "手持无照明街头实拍与大胆跳接剪辑，粗粝的Ilford黑白颗粒赋予画面新闻纪实般的鲜活感。"
+  },
+  {
+    "id": 14,
+    "titleCn": "东京物语",
+    "titleOrig": "東京物語 / Tokyo Story",
+    "year": 1953,
+    "countries": [{ "zh": "日本", "en": "Japan" }],
+    "runtimeMin": 136,
+    "aspectRatio": "1.37:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "家庭", "en": "Family" }
+    ],
+    "credits": {
+      "director": [{ "zh": "小津安二郎", "en": "Yasujiro Ozu" }],
+      "writer": [
+        { "zh": "野田高梧", "en": "Kogo Noda" },
+        { "zh": "小津安二郎", "en": "Yasujiro Ozu" }
+      ],
+      "cinematographer": [{ "zh": "厚田雄春", "en": "Yuharu Atsuta" }],
+      "cast": [
+        { "zh": "笠智众", "en": "Chishu Ryu" },
+        { "zh": "东山千荣子", "en": "Chieko Higashiyama" },
+        { "zh": "原节子", "en": "Setsuko Hara" },
+        { "zh": "杉村春子", "en": "Haruko Sugimura" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0046438/",
+      "letterboxd": "https://letterboxd.com/film/tokyo-story/",
+      "douban": "https://movie.douban.com/subject/1291568/"
+    },
+    "watchedDate": "2026-08-29 晚间 / Evening",
+    "medium": { "zh": "松竹 4K 数字修复版", "en": "Shochiku 4K Restoration" },
+    "specs": "35mm 黑白银盐 · 榻榻米机位 / Tatami Shot · 1.37:1",
+    "myRating": 5,
+    "ratings": { "imdb": 8.1, "letterboxd": 4.5, "douban": 9.2 },
+    "quote": "“人生本来就是令人失望的啊，但活着还是得微笑着过下去。”",
+    "synopsis": {
+      "zh": "住在尾道海边的年迈父母远赴东京探望各自成家的儿女，却发现忙碌的子女无暇陪伴，反而是阵亡次子的遗孀纪子给予了两位老人最真挚的照料。返乡途中母亲病倒辞世，大家族的温情表象悄然瓦解。",
+      "en": "An aging couple from Onomichi travel to Tokyo to visit their grown children, only to find them absorbed in their busy postwar lives—while their widowed daughter-in-law shows them genuine kindness."
+    },
+    "review": {
+      "title": "榻榻米高度的慈悲：小津镜头下万物皆逝的静水流深",
+      "paragraphs": [
+        "小津安二郎终其一生守着50毫米标准镜头与离地三尺的固定机位，不推不摇，不用淡入淡出，却在最克制的几何构图里盛满了最汹涌的人世悲凉。《东京物语》里没有任何恶人，儿女们的疏远只是出于战后都市日常生计的庸常与疲惫，而这恰恰比戏剧化的冲突更令人心碎。",
+        "尾道清晨的海面、冒着白烟的火车头、空无一人的走廊枕头镜头，小津用这些“空镜头”（Mono no aware）丈量着亲情的消逝。笠智众最后独自坐在海边望着远方轮船的背影，道尽了人类面对时间与孤独的终极姿态。"
+      ]
+    },
+    "cameraNote": "严格的50mm定焦低机位固定镜头与180度正面视线匹配，空镜头的留白构成的东方建筑美学。"
+  },
+  {
+    "id": 15,
+    "titleCn": "一一",
+    "titleOrig": "Yi Yi: A One and a Two...",
+    "year": 2000,
+    "countries": [
+      { "zh": "中国台湾", "en": "Taiwan" },
+      { "zh": "日本", "en": "Japan" }
+    ],
+    "runtimeMin": 173,
+    "aspectRatio": "1.85:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "家庭", "en": "Family" },
+      { "zh": "城市", "en": "Urban" }
+    ],
+    "credits": {
+      "director": [{ "zh": "杨德昌", "en": "Edward Yang" }],
+      "writer": [{ "zh": "杨德昌", "en": "Edward Yang" }],
+      "cinematographer": [{ "zh": "杨渭汉", "en": "Yang Wei-han" }],
+      "cast": [
+        { "zh": "吴念真", "en": "Wu Nien-jen" },
+        { "zh": "金燕玲", "en": "Elaine Jin" },
+        { "zh": "李凯莉", "en": "Kelly Lee" },
+        { "zh": "张洋洋", "en": "Jonathan Chang" },
+        { "zh": "尾形一成", "en": "Issey Ogata" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0244316/",
+      "letterboxd": "https://letterboxd.com/film/yi-yi/",
+      "douban": "https://movie.douban.com/subject/1292434/"
+    },
+    "watchedDate": "2026-08-20 晚间 / Evening",
+    "medium": { "zh": "Criterion 蓝光修复版", "en": "Criterion Blu-ray" },
+    "specs": "35mm 胶片 · Color · 1.85:1",
+    "myRating": 5,
+    "ratings": { "imdb": 8.1, "letterboxd": 4.5, "douban": 9.1 },
+    "quote": "“电影发明以后，人类的生命比起以前延长了至少三倍。”",
+    "synopsis": {
+      "zh": "从台北一场喜庆却混乱的婚礼开始，到一场平静的葬礼结束。简南峻一家三代人在婆婆突发脑溢血昏迷的日子里，各自面对中年危机、初恋重逢、青春期迷惘与对世界背面的好奇。",
+      "en": "Each member of a middle-class Taipei family asks hard questions about life's meaning as they live through everyday quandaries after the family matriarch falls into a coma."
+    },
+    "review": {
+      "title": "玻璃幕墙上的倒影：拍下那些我们自己看不见的背面",
+      "paragraphs": [
+        "在《一一》的173分钟里，杨德昌如同一位冷静而温柔的建筑师，将千禧年之交台北中产家庭的悲欢离合编织成一首恢弘的赋格曲。他大量利用都市高楼的玻璃窗、汽车后视镜与门框，让人物的实体与都市霓虹的倒影重叠在一起，既疏离又充满诗意。",
+        "当简南峻在东京与初恋阿瑞重走青春之路，与此同时女儿婷婷在台北经历第一次心碎，两组平行剪辑让两代人的情感互为镜像。而小儿子洋洋拿着傻瓜相机拍下所有人的后脑勺，则替杨德昌说出了对电影艺术最动人的定义——帮人们看见自己看不到的那一半生命。"
+      ]
+    },
+    "cameraNote": "大量中远景固定长镜头与双层玻璃反光构图，将人物心理空间与现代都市建筑景观融为一体。"
+  },
+  {
+    "id": 16,
+    "titleCn": "蓝白红三部曲之蓝",
+    "titleOrig": "Trois couleurs : Bleu / Three Colors: Blue",
+    "year": 1993,
+    "countries": [
+      { "zh": "法国", "en": "France" },
+      { "zh": "波兰", "en": "Poland" },
+      { "zh": "瑞士", "en": "Switzerland" }
+    ],
+    "runtimeMin": 98,
+    "aspectRatio": "1.85:1",
+    "genres": [
+      { "zh": "剧情", "en": "Drama" },
+      { "zh": "音乐", "en": "Music" }
+    ],
+    "credits": {
+      "director": [{ "zh": "克日什托夫·基耶斯洛夫斯基", "en": "Krzysztof Kieślowski" }],
+      "writer": [
+        { "zh": "克日什托夫·基耶斯洛夫斯基", "en": "Krzysztof Kieślowski" },
+        { "zh": "克日什托夫·皮谢维奇", "en": "Krzysztof Piesiewicz" }
+      ],
+      "cinematographer": [{ "zh": "斯拉沃米尔·伊贾克", "en": "Sławomir Idziak" }],
+      "cast": [
+        { "zh": "朱丽叶·比诺什", "en": "Juliette Binoche" },
+        { "zh": "贝努瓦·雷让", "en": "Benoît Régent" },
+        { "zh": "弗洛伦斯·佩内尔", "en": "Florence Pernel" }
+      ]
+    },
+    "urls": {
+      "imdb": "https://www.imdb.com/title/tt0108394/",
+      "letterboxd": "https://letterboxd.com/film/three-colors-blue/",
+      "douban": "https://movie.douban.com/subject/1292048/"
+    },
+    "watchedDate": "2026-08-11 深夜 / Late Night",
+    "medium": { "zh": "MK2 4K 修复典藏版", "en": "MK2 4K Restoration" },
+    "specs": "35mm 胶片 · Color · 1.85:1",
+    "myRating": 5,
+    "ratings": { "imdb": 7.9, "letterboxd": 4.3, "douban": 8.8 },
+    "quote": "“现在我只剩下一件事要做：什么都不做，不要财产，不要回忆，不要朋友，不要爱。”",
+    "synopsis": {
+      "zh": "一场车祸夺走了作曲家丈夫和年幼女儿的生命。幸存的朱莉试图彻底切断与过去的一切联系，搬进巴黎闹市区隐居，然而脑海中挥之不去的未完成交响乐旋律与意外发现的丈夫遗事，将她重新拉回人间的羁绊。",
+      "en": "A woman struggles to find a way to live her life after the death of her composer husband and young daughter in a car crash, attempting to sever all ties to her past."
+    },
+    "review": {
+      "title": "方糖浸入黑咖啡的五秒钟：绝对自由的幻觉与悲伤的显影",
+      "paragraphs": [
+        "基耶斯洛夫斯基对“自由”的探讨没有停留在政治口号上，而是深入到了个体情感最私密的深渊：一个人能否通过斩断所有爱与记忆来实现绝对的情感自由？朱丽叶·比诺什用近乎克制到极致的眼神，演绎了这种自我放逐背后的剧痛。",
+        "摄影师伊贾克在镜头前加装的特制蓝色滤镜，以及普瑞斯纳恢弘悲怆的交响乐，每每在朱莉情绪崩溃的边缘骤然全黑静音、继而泛起幽蓝波光。而那颗浸入咖啡、在五秒钟内被褐色液体完全吞噬的白色方糖特写，则是电影史上最精准的心理微距镜头。"
+      ]
+    },
+    "cameraNote": "极端微距特写（眼球反光、方糖吸水、吊灯水晶）与骤然黑场结合，以听觉交响乐驱动视觉剪辑。"
+  }
+]
