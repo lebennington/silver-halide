@@ -2,9 +2,26 @@
 // 数据校验 + 共享解析工具：供浏览器(films.js)与 Node(check-films.mjs)共用。
 
 export const ISO_DATE_RE = /^(\d{4}-\d{2}-\d{2})/
+
+// 判断 YYYY-MM-DD 是否为真实日历日期
+const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+const isLeapYear = (y) => (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0
+export function isValidDate(dateStr) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateStr || '')
+  if (!m) return false
+  const year = Number(m[1])
+  const month = Number(m[2])
+  const day = Number(m[3])
+  if (month < 1 || month > 12 || day < 1) return false
+  const days = month === 2 && isLeapYear(year) ? 29 : DAYS_IN_MONTH[month - 1]
+  return day <= days
+}
+
+// 提取 watchedDate 开头的 YYYY-MM-DD，非法日期返回 null
 export const parseWatchedDate = (film) => {
   const m = ISO_DATE_RE.exec(film.watchedDate || '')
-  return m ? m[1] : null
+  const dateStr = m ? m[1] : null
+  return dateStr && isValidDate(dateStr) ? dateStr : null
 }
 // —— 海报 slug 派生（posters/{slug}-{year}.jpg）——
 const englishTitle = (titleOrig) => {
@@ -30,6 +47,9 @@ export const filmSlug = (titleOrig) => SLUG_OVERRIDES[titleOrig] || slugify(engl
 // 海报相对路径：posters/{slug}-{year}.jpg
 export const filmPoster = (film) => 'posters/' + filmSlug(film.titleOrig) + '-' + film.year + '.jpg'
 
+// 各平台评分范围
+const RATING_RANGES = { imdb: [1, 10], letterboxd: [0, 5], douban: [1, 10] }
+
 export function validateFilms(films) {
   const errors = []
   const warnings = []
@@ -46,9 +66,9 @@ export function validateFilms(films) {
 
     if (!nonEmpty(film.titleCn) || !nonEmpty(film.titleOrig))
       errors.push(`${tag}: titleCn / titleOrig 不能为空`)
-    if (!ISO_DATE_RE.test(film.watchedDate || ''))
-      errors.push(`${tag}: watchedDate 必须以 YYYY-MM-DD 开头`)
-    if (typeof film.year !== 'number') errors.push(`${tag}: year 必须是数字`)
+    if (!parseWatchedDate(film))
+      errors.push(`${tag}: watchedDate 必须以合法日期开头（YYYY-MM-DD，如 2026-02-28）`)
+    if (!Number.isInteger(film.year)) errors.push(`${tag}: year 必须是整数`)
     if (!Number.isFinite(film.runtimeMin) || film.runtimeMin <= 0)
       errors.push(`${tag}: runtimeMin 必须是正数`)
 
@@ -62,11 +82,15 @@ export function validateFilms(films) {
     if (!credits || typeof credits !== 'object') {
       errors.push(`${tag}: 缺少 credits 对象`)
     } else {
+      // 主创（导演/编剧/摄影）：数组允许为空；非空时每项必须含非空 zh/en
       for (const role of ['director', 'writer', 'cinematographer']) {
-        if (!Array.isArray(credits[role]) || !credits[role].every(hasBoth)) {
-          errors.push(`${tag}: credits.${role} 必须是含非空 zh/en 的数组`)
+        if (!Array.isArray(credits[role])) {
+          errors.push(`${tag}: credits.${role} 必须是数组`)
+        } else if (!credits[role].every(hasBoth)) {
+          errors.push(`${tag}: credits.${role} 每项必须含非空 zh / en`)
         }
       }
+      // 主演：数组必须非空；每位演员至少要有非空 zh 或 en 之一
       if (!Array.isArray(credits.cast) || credits.cast.length === 0) {
         errors.push(`${tag}: credits.cast 必须是非空数组`)
       } else {
@@ -83,8 +107,10 @@ export function validateFilms(films) {
     const r = film.ratings
     if (!r || typeof r !== 'object') errors.push(`${tag}: 缺少 ratings 对象`)
     else
-      ['imdb', 'letterboxd', 'douban'].forEach((k) => {
-        if (typeof r[k] !== 'number') errors.push(`${tag}: ratings.${k} 必须是数字`)
+      Object.entries(RATING_RANGES).forEach(([k, [min, max]]) => {
+        if (!Number.isFinite(r[k]) || r[k] < min || r[k] > max) {
+          errors.push(`${tag}: ratings.${k} 必须是 ${min}-${max} 的数字`)
+        }
       })
 
     if (!Number.isFinite(film.myRating) || film.myRating < 0 || film.myRating > 5) {

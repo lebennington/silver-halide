@@ -1,7 +1,8 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { RECENT_COUNT } from '../data/films.js'
-import { namesZh, dateOnly } from '../data/format.js'
+import { namesZh } from '../data/format.js'
+import { parseWatchedDate } from '../data/validate.js'
 
 const viewMode = ref('card') // 视图模式 'card'(档案卡片) | 'contact'(印相小样)
 
@@ -63,8 +64,8 @@ const filteredFilms = computed(() => {
       const diff = (b.ratings?.douban || 0) - (a.ratings?.douban || 0)
       return (diff !== 0 ? diff : b.id - a.id) * dir
     } else {
-      // 默认按观影日期 YYYY-MM-DD 排序
-      const cmp = dateOnly(b.watchedDate).localeCompare(dateOnly(a.watchedDate))
+      // 默认按观影日期 YYYY-MM-DD 排序（非法日期视为空，排到最后）
+      const cmp = (parseWatchedDate(b) || '').localeCompare(parseWatchedDate(a) || '')
       return (cmp !== 0 ? cmp : b.id - a.id) * dir
     }
   })
