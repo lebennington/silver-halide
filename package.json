@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "check": "node scripts/check-films.mjs",
+    "add": "node scripts/add.mjs",
     "dev": "vite",
     "build": "npm run check && vite build",
     "preview": "vite preview"
