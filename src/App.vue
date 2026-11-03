@@ -177,7 +177,7 @@ onUnmounted(() => {
     type="button"
     aria-label="回到顶部"
     @click="scrollToTop"
-    class="fixed bottom-6 right-5 sm:bottom-8 sm:right-8 z-40 px-3 py-2 rounded-sm bg-neutral-900/95 backdrop-blur-md border border-neutral-600 text-neutral-200 hover:text-white hover:border-amber-400/80 shadow-2xl font-mono-code text-xs flex items-center gap-1.5 transition-all duration-300 cursor-pointer"
+    class="fixed bottom-6 right-5 sm:bottom-8 sm:right-8 z-40 px-3 py-2 rounded-xs bg-neutral-900/95 backdrop-blur-md border border-neutral-600 text-neutral-200 hover:text-white hover:border-amber-400/80 shadow-2xl font-mono-code text-xs flex items-center gap-1.5 transition-all duration-300 cursor-pointer"
     :class="
       showBackToTop
         ? 'opacity-100 translate-y-0 pointer-events-auto'

@@ -115,12 +115,12 @@ function resetFilters() {
         <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
           <!-- 视图切换：档案卡片 vs 印相小样 -->
           <div
-            class="flex items-center gap-1 p-0.5 bg-neutral-900 border border-neutral-800 rounded-sm font-mono-code text-xs shrink-0"
+            class="flex items-center gap-1 p-0.5 bg-neutral-900 border border-neutral-800 rounded-xs font-mono-code text-xs shrink-0"
           >
             <button
               type="button"
               @click="viewMode = 'card'"
-              class="px-2.5 py-1 rounded-sm transition-colors"
+              class="px-2.5 py-1 rounded-xs transition-colors"
               :class="
                 viewMode === 'card'
                   ? 'bg-neutral-800 text-white font-medium'
@@ -132,7 +132,7 @@ function resetFilters() {
             <button
               type="button"
               @click="viewMode = 'contact'"
-              class="px-2.5 py-1 rounded-sm transition-colors"
+              class="px-2.5 py-1 rounded-xs transition-colors"
               :class="
                 viewMode === 'contact'
                   ? 'bg-neutral-800 text-white font-medium'
@@ -149,7 +149,7 @@ function resetFilters() {
               v-model="searchQuery"
               type="search"
               placeholder="检索片名 / 导演 / 演职员 / 年份 / 国家..."
-              class="w-full bg-neutral-950 border border-neutral-800 focus:border-neutral-400 rounded-sm px-3.5 py-2 text-xs text-white placeholder-neutral-500 font-mono-code focus:outline-none transition-colors"
+              class="w-full bg-neutral-950 border border-neutral-800 focus:border-neutral-400 rounded-xs px-3.5 py-2 text-xs text-white placeholder-neutral-500 font-mono-code focus:outline-none transition-colors"
             />
           </div>
         </div>
@@ -164,7 +164,7 @@ function resetFilters() {
             :key="tab.key"
             type="button"
             @click="currentFilter = tab.key"
-            class="px-3.5 py-1.5 rounded-sm border transition-colors"
+            class="px-3.5 py-1.5 rounded-xs border transition-colors"
             :class="
               currentFilter === tab.key
                 ? 'border-neutral-500 bg-white text-black font-medium'
@@ -182,7 +182,7 @@ function resetFilters() {
             v-model="sortField"
             @change="onSortFieldChange"
             aria-label="档案馆排序分类"
-            class="bg-neutral-900 border border-neutral-700 text-neutral-200 rounded-sm px-2.5 py-1 text-xs focus:outline-none focus:border-amber-400/80 transition-colors cursor-pointer"
+            class="bg-neutral-900 border border-neutral-700 text-neutral-200 rounded-xs px-2.5 py-1 text-xs focus:outline-none focus:border-amber-400/80 transition-colors cursor-pointer"
           >
             <option value="watched">观影时间</option>
             <option value="year">上映年份</option>
@@ -192,7 +192,7 @@ function resetFilters() {
             type="button"
             @click="toggleSortOrder"
             title="反转当前排序方向"
-            class="px-2 py-1 rounded-sm border border-neutral-700 bg-neutral-900 text-neutral-300 hover:text-amber-300 hover:border-amber-400/60 transition-colors inline-flex items-center gap-1 whitespace-nowrap cursor-pointer"
+            class="px-2 py-1 rounded-xs border border-neutral-700 bg-neutral-900 text-neutral-300 hover:text-amber-300 hover:border-amber-400/60 transition-colors inline-flex items-center gap-1 whitespace-nowrap cursor-pointer"
           >
             <span class="text-amber-400/90 leading-none">{{
               sortOrder === 'desc' ? '↓' : '↑'
@@ -215,7 +215,7 @@ function resetFilters() {
       <!-- 空状态提示（当搜索不到任何电影时显示） -->
       <div
         v-if="filteredFilms.length === 0"
-        class="py-16 text-center border border-neutral-800/80 bg-neutral-950/60 rounded-sm space-y-3"
+        class="py-16 text-center border border-neutral-800/80 bg-neutral-950/60 rounded-xs space-y-3"
       >
         <p class="font-serif-cn text-base text-neutral-300">未检索到匹配的观影记录</p>
         <p class="font-mono-code text-xs text-neutral-500">
@@ -225,7 +225,7 @@ function resetFilters() {
           <button
             type="button"
             @click="resetFilters"
-            class="px-4 py-1.5 bg-neutral-900 border border-neutral-700 text-xs font-mono-code text-neutral-200 hover:text-white hover:border-amber-400/80 rounded-sm transition-colors inline-flex items-center gap-1.5"
+            class="px-4 py-1.5 bg-neutral-900 border border-neutral-700 text-xs font-mono-code text-neutral-200 hover:text-white hover:border-amber-400/80 rounded-xs transition-colors inline-flex items-center gap-1.5"
           >
             <span class="text-amber-400">↺</span>
             <span>重置筛选条件</span>
@@ -234,7 +234,7 @@ function resetFilters() {
       </div>
 
       <!-- 模式 A：印相小样 (Contact Sheet) 网格 -->
-      <div v-else-if="viewMode === 'contact'" class="contact-sheet-board rounded-sm">
+      <div v-else-if="viewMode === 'contact'" class="contact-sheet-board rounded-xs">
         <div
           v-for="film in filteredFilms"
           :key="`contact-${film.id}`"
@@ -310,7 +310,7 @@ function resetFilters() {
           @click="emit('select-film', film.id)"
           @keydown.enter.prevent="emit('select-film', film.id)"
           @keydown.space.prevent="emit('select-film', film.id)"
-          class="flex gap-4 p-3.5 rounded-sm border border-neutral-800/90 bg-[#0d0d0d] hover:bg-neutral-900/90 hover:border-neutral-500 transition-all text-left group cursor-pointer shadow-lg"
+          class="flex gap-4 p-3.5 rounded-xs border border-neutral-800/90 bg-[#0d0d0d] hover:bg-neutral-900/90 hover:border-neutral-500 transition-all text-left group cursor-pointer shadow-lg"
         >
           <!-- 左侧缩略海报 -->
           <div
@@ -338,7 +338,7 @@ function resetFilters() {
             <div>
               <div class="flex items-center justify-between gap-2 mb-1.5">
                 <span
-                  class="font-mono-code text-[10px] px-1.5 py-0.5 rounded-sm border"
+                  class="font-mono-code text-[10px] px-1.5 py-0.5 rounded-xs border"
                   :class="
                     film.recent
                       ? 'bg-neutral-800 text-neutral-200 border-neutral-600'

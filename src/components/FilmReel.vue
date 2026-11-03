@@ -305,7 +305,7 @@ onUnmounted(() => {
     <!-- 顶部胶卷放映控制栏 -->
     <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 mb-5">
       <div
-        class="flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 px-3.5 sm:px-4 py-2.5 rounded-sm bg-neutral-950/95 border border-neutral-800/90 shadow-lg"
+        class="flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 px-3.5 sm:px-4 py-2.5 rounded-xs bg-neutral-950/95 border border-neutral-800/90 shadow-lg"
       >
         <!-- 1. 左侧：放映机状态指示灯 -->
         <div
@@ -332,7 +332,7 @@ onUnmounted(() => {
 
         <!-- 2. 中间：10帧微缩胶片定位格 + 当前片门帧号 + 齿孔读数 -->
         <div
-          class="flex items-center gap-1.5 px-2.5 py-1.5 bg-black/70 border border-neutral-800/90 rounded-sm font-mono-code text-[10px] sm:text-[11px]"
+          class="flex items-center gap-1.5 px-2.5 py-1.5 bg-black/70 border border-neutral-800/90 rounded-xs font-mono-code text-[10px] sm:text-[11px]"
         >
           <!-- <span class="text-neutral-500 mr-0.5 hidden sm:inline">GATE:</span> -->
           <!-- 10个微缩胶片格 -->
@@ -368,14 +368,14 @@ onUnmounted(() => {
           <button
             @click="smoothStepReel(-1)"
             type="button"
-            class="w-full sm:w-24 justify-center py-1.5 rounded-sm border border-neutral-700 bg-neutral-900 text-neutral-200 hover:text-white hover:border-neutral-500 transition-colors inline-flex items-center"
+            class="w-full sm:w-24 justify-center py-1.5 rounded-xs border border-neutral-700 bg-neutral-900 text-neutral-200 hover:text-white hover:border-neutral-500 transition-colors inline-flex items-center"
           >
             ← 倒片
           </button>
           <button
             @click="togglePlay"
             type="button"
-            class="w-full sm:w-24 justify-center py-1.5 rounded-sm border transition-colors inline-flex items-center gap-1.5"
+            class="w-full sm:w-24 justify-center py-1.5 rounded-xs border transition-colors inline-flex items-center gap-1.5"
             :class="
               !isAutoPlaying
                 ? 'border-neutral-500 bg-neutral-800 text-white hover:border-neutral-400'
@@ -390,7 +390,7 @@ onUnmounted(() => {
           <button
             @click="smoothStepReel(1)"
             type="button"
-            class="w-full sm:w-24 justify-center py-1.5 rounded-sm border border-neutral-700 bg-neutral-900 text-neutral-200 hover:text-white hover:border-neutral-500 transition-colors inline-flex items-center"
+            class="w-full sm:w-24 justify-center py-1.5 rounded-xs border border-neutral-700 bg-neutral-900 text-neutral-200 hover:text-white hover:border-neutral-500 transition-colors inline-flex items-center"
           >
             进片 →
           </button>
@@ -408,10 +408,10 @@ onUnmounted(() => {
     >
       <!-- 左右两侧边缘暗角渐变遮罩，让胶片进出屏幕更自然 -->
       <div
-        class="pointer-events-none absolute inset-y-0 left-0 w-8 sm:w-24 bg-gradient-to-r from-[#070707] to-transparent z-20"
+        class="pointer-events-none absolute inset-y-0 left-0 w-8 sm:w-24 bg-linear-to-r from-[#070707] to-transparent z-20"
       ></div>
       <div
-        class="pointer-events-none absolute inset-y-0 right-0 w-8 sm:w-24 bg-gradient-to-l from-[#070707] to-transparent z-20"
+        class="pointer-events-none absolute inset-y-0 right-0 w-8 sm:w-24 bg-linear-to-l from-[#070707] to-transparent z-20"
       ></div>
 
       <!-- 屏幕正中央的片门聚光灯 (GATE) 与上下金色准星 -->
@@ -420,7 +420,7 @@ onUnmounted(() => {
         class="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center"
       >
         <div
-          class="w-12 sm:w-16 h-[2px] bg-gradient-to-r from-transparent via-amber-400/70 to-transparent"
+          class="w-12 sm:w-16 h-[2px] bg-linear-to-r from-transparent via-amber-400/70 to-transparent"
         ></div>
         <span
           class="text-[8px] font-mono-code tracking-[0.2em] text-amber-400/60 mt-0.5 leading-none"
@@ -435,7 +435,7 @@ onUnmounted(() => {
           >▲ GATE</span
         >
         <div
-          class="w-12 sm:w-16 h-[2px] bg-gradient-to-r from-transparent via-amber-400/70 to-transparent"
+          class="w-12 sm:w-16 h-[2px] bg-linear-to-r from-transparent via-amber-400/70 to-transparent"
         ></div>
       </div>
 

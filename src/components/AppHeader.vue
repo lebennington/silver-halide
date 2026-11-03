@@ -29,7 +29,7 @@ const grainLabelMap = {
         class="group flex items-center gap-2 sm:gap-3 text-left focus:outline-none shrink-0"
       >
         <div
-          class="w-8 h-8 sm:w-9 sm:h-9 rounded-sm border border-neutral-600 flex items-center justify-center bg-neutral-950 group-hover:border-white transition-colors shrink-0"
+          class="w-8 h-8 sm:w-9 sm:h-9 rounded-xs border border-neutral-600 flex items-center justify-center bg-neutral-950 group-hover:border-white transition-colors shrink-0"
         >
           <!-- 35mm 胶片盘 SVG 图标 -->
           <svg
@@ -96,7 +96,7 @@ const grainLabelMap = {
           "
         >
           <span>档案馆</span>
-          <span class="text-[10px] px-1.5 py-0.5 bg-neutral-800 text-neutral-300 rounded-sm">{{
+          <span class="text-[10px] px-1.5 py-0.5 bg-neutral-800 text-neutral-300 rounded-xs">{{
             totalCount
           }}</span>
         </button>

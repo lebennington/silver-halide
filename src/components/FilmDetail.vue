@@ -104,12 +104,12 @@ onUnmounted(() => {
       >
         <!-- 左侧：返回按钮 -->
         <div
-          class="pointer-events-auto inline-flex items-center gap-1.5 sm:gap-2 p-1 sm:p-1.5 bg-[#0a0a0a]/95 backdrop-blur-md border border-neutral-700/90 rounded-sm font-mono-code text-[11px] sm:text-xs shadow-2xl min-w-0 max-w-[54%] sm:max-w-[60%]"
+          class="pointer-events-auto inline-flex items-center gap-1.5 sm:gap-2 p-1 sm:p-1.5 bg-[#0a0a0a]/95 backdrop-blur-md border border-neutral-700/90 rounded-xs font-mono-code text-[11px] sm:text-xs shadow-2xl min-w-0 max-w-[54%] sm:max-w-[60%]"
         >
           <button
             type="button"
             @click="emit('back')"
-            class="px-2 sm:px-3 py-1 sm:py-1.5 rounded-sm border border-neutral-800 bg-neutral-900/90 text-neutral-200 hover:text-white hover:border-neutral-500 transition-colors inline-flex items-center gap-1.5 whitespace-nowrap shrink-0 cursor-pointer"
+            class="px-2 sm:px-3 py-1 sm:py-1.5 rounded-xs border border-neutral-800 bg-neutral-900/90 text-neutral-200 hover:text-white hover:border-neutral-500 transition-colors inline-flex items-center gap-1.5 whitespace-nowrap shrink-0 cursor-pointer"
           >
             <span class="text-amber-400/90 leading-none">←</span>
             <span>{{ sourceView === 'index' ? '返回档案馆' : '返回放映室' }}</span>
@@ -132,19 +132,19 @@ onUnmounted(() => {
 
         <!-- 右侧：上一帧 / 帧号指示器 / 下一帧 -->
         <div
-          class="pointer-events-auto inline-flex items-center gap-1 sm:gap-2 p-1 sm:p-1.5 bg-[#0a0a0a]/95 backdrop-blur-md border border-neutral-700/90 rounded-sm font-mono-code text-[11px] sm:text-xs shadow-2xl shrink-0"
+          class="pointer-events-auto inline-flex items-center gap-1 sm:gap-2 p-1 sm:p-1.5 bg-[#0a0a0a]/95 backdrop-blur-md border border-neutral-700/90 rounded-xs font-mono-code text-[11px] sm:text-xs shadow-2xl shrink-0"
         >
           <!-- 上一帧按钮 + 悬停预览气泡 -->
           <div class="relative group">
             <button
               type="button"
               @click="emit('select-film', prevFilm.id)"
-              class="px-2 sm:px-3 py-1 sm:py-1.5 rounded-sm border border-neutral-800 bg-neutral-900/90 text-neutral-300 hover:text-white hover:border-neutral-500 transition-colors whitespace-nowrap cursor-pointer"
+              class="px-2 sm:px-3 py-1 sm:py-1.5 rounded-xs border border-neutral-800 bg-neutral-900/90 text-neutral-300 hover:text-white hover:border-neutral-500 transition-colors whitespace-nowrap cursor-pointer"
             >
               ◁ <span class="hidden sm:inline">上一帧</span>
             </button>
             <div
-              class="pointer-events-none absolute left-0 sm:left-auto sm:right-0 top-full mt-2 w-48 sm:w-56 p-2.5 rounded-sm bg-[#0c0c0c]/95 backdrop-blur-md border border-neutral-600/90 shadow-2xl opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 z-50 text-left"
+              class="pointer-events-none absolute left-0 sm:left-auto sm:right-0 top-full mt-2 w-48 sm:w-56 p-2.5 rounded-xs bg-[#0c0c0c]/95 backdrop-blur-md border border-neutral-600/90 shadow-2xl opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 z-50 text-left"
             >
               <div
                 class="flex items-center justify-between text-[10px] font-mono-code text-amber-400/95 mb-1"
@@ -166,7 +166,7 @@ onUnmounted(() => {
             type="button"
             title="点击前往档案馆"
             @click="emit('open-archive')"
-            class="px-2 sm:px-3 py-1 sm:py-1.5 rounded-sm bg-neutral-900/70 border border-neutral-800/90 text-amber-400/95 hover:border-neutral-500 transition-colors text-center font-medium whitespace-nowrap tabular-nums cursor-pointer"
+            class="px-2 sm:px-3 py-1 sm:py-1.5 rounded-xs bg-neutral-900/70 border border-neutral-800/90 text-amber-400/95 hover:border-neutral-500 transition-colors text-center font-medium whitespace-nowrap tabular-nums cursor-pointer"
           >
             {{ frameIndicatorText }}
           </button>
@@ -176,12 +176,12 @@ onUnmounted(() => {
             <button
               type="button"
               @click="emit('select-film', nextFilm.id)"
-              class="px-2 sm:px-3 py-1 sm:py-1.5 rounded-sm border border-neutral-800 bg-neutral-900/90 text-neutral-300 hover:text-white hover:border-neutral-500 transition-colors whitespace-nowrap cursor-pointer"
+              class="px-2 sm:px-3 py-1 sm:py-1.5 rounded-xs border border-neutral-800 bg-neutral-900/90 text-neutral-300 hover:text-white hover:border-neutral-500 transition-colors whitespace-nowrap cursor-pointer"
             >
               <span class="hidden sm:inline">下一帧</span> ▷
             </button>
             <div
-              class="pointer-events-none absolute right-0 top-full mt-2 w-48 sm:w-56 p-2.5 rounded-sm bg-[#0c0c0c]/95 backdrop-blur-md border border-neutral-600/90 shadow-2xl opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 z-50 text-left"
+              class="pointer-events-none absolute right-0 top-full mt-2 w-48 sm:w-56 p-2.5 rounded-xs bg-[#0c0c0c]/95 backdrop-blur-md border border-neutral-600/90 shadow-2xl opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 z-50 text-left"
             >
               <div
                 class="flex items-center justify-between text-[10px] font-mono-code text-amber-400/95 mb-1"
@@ -208,7 +208,7 @@ onUnmounted(() => {
         >
           <!-- 1. 35mm 幻灯片装裱框 (Slide Mount) -->
           <div
-            class="col-span-1 min-w-0 p-2 sm:p-2.5 md:p-3.5 rounded-sm shadow-2xl relative flex flex-col justify-between"
+            class="col-span-1 min-w-0 p-2 sm:p-2.5 md:p-3.5 rounded-xs shadow-2xl relative flex flex-col justify-between"
           >
             <!-- 氛围柔光 -->
             <div
@@ -229,7 +229,7 @@ onUnmounted(() => {
 
             <!-- 遮罩层（挡住正中间的强光，让柔光从四周边框和底部自然溢出） -->
             <div
-              class="pointer-events-none absolute inset-0 bg-[#121212]/90 border border-neutral-700/80 rounded-sm z-[1]"
+              class="pointer-events-none absolute inset-0 bg-[#121212]/90 border border-neutral-700/80 rounded-xs z-[1]"
             ></div>
 
             <!-- 幻灯片框顶部边码与画幅比 -->
@@ -292,7 +292,7 @@ onUnmounted(() => {
 
           <!-- 2. 观影档案卡 (Screening Archive Card) -->
           <div
-            class="col-span-1 min-w-0 overflow-hidden p-2.5 sm:p-3.5 md:p-4 bg-neutral-950/95 border border-neutral-800/90 rounded-sm font-mono-code text-xs flex flex-col justify-between space-y-2 sm:space-y-2.5"
+            class="col-span-1 min-w-0 overflow-hidden p-2.5 sm:p-3.5 md:p-4 bg-neutral-950/95 border border-neutral-800/90 rounded-xs font-mono-code text-xs flex flex-col justify-between space-y-2 sm:space-y-2.5"
           >
             <div class="detail-section-title border-b border-neutral-800 pb-1.5">
               SCREENING ARCHIVE // 观影档案卡
@@ -349,25 +349,25 @@ onUnmounted(() => {
               class="flex flex-col gap-2 font-mono-code text-[11px] sm:text-xs text-neutral-300 mt-4 pt-1"
             >
               <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 min-h-[2rem]">
-                <span class="px-2.5 py-1 bg-white text-black font-semibold rounded-sm shrink-0">{{
+                <span class="px-2.5 py-1 bg-white text-black font-semibold rounded-xs shrink-0">{{
                   film.year
                 }}</span>
                 <span class="hidden sm:inline text-neutral-600">·</span>
                 <span
-                  class="px-2.5 py-1 bg-neutral-900 border border-neutral-700 text-neutral-100 rounded-sm leading-snug break-words"
+                  class="px-2.5 py-1 bg-neutral-900 border border-neutral-700 text-neutral-100 rounded-xs leading-snug break-words"
                 >
                   {{ namesBilingual(film.countries) }}
                 </span>
                 <span class="hidden sm:inline text-neutral-600">·</span>
                 <span
-                  class="px-2.5 py-1 bg-neutral-900 border border-neutral-700 text-neutral-100 rounded-sm shrink-0"
+                  class="px-2.5 py-1 bg-neutral-900 border border-neutral-700 text-neutral-100 rounded-xs shrink-0"
                 >
                   {{ runtimeText(film.runtimeMin) }}
                 </span>
               </div>
               <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 min-h-[2rem]">
                 <span
-                  class="px-2.5 py-1 bg-neutral-900 border border-neutral-700 text-neutral-200 rounded-sm leading-snug break-words"
+                  class="px-2.5 py-1 bg-neutral-900 border border-neutral-700 text-neutral-200 rounded-xs leading-snug break-words"
                 >
                   {{ namesBilingual(film.genres) }}
                 </span>
@@ -381,7 +381,7 @@ onUnmounted(() => {
               <div
                 v-for="role in creditRoles"
                 :key="role.enLabel"
-                class="p-4 rounded-sm bg-neutral-900/90 border border-neutral-700/80 min-h-[108px] h-full min-w-0 flex flex-col justify-between"
+                class="p-4 rounded-xs bg-neutral-900/90 border border-neutral-700/80 min-h-[108px] h-full min-w-0 flex flex-col justify-between"
               >
                 <div
                   class="flex items-center justify-between border-b border-neutral-800 pb-2 mb-2.5"
@@ -420,7 +420,7 @@ onUnmounted(() => {
                 :href="film.urls?.imdb"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="logo-badge-card group rounded-sm p-2.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3.5 cursor-pointer min-w-0"
+                class="logo-badge-card group rounded-xs p-2.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3.5 cursor-pointer min-w-0"
                 aria-label="前往 IMDb 查看评分"
               >
                 <div
@@ -476,7 +476,7 @@ onUnmounted(() => {
                 :href="film.urls?.letterboxd"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="logo-badge-card group rounded-sm p-2.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3.5 cursor-pointer min-w-0"
+                class="logo-badge-card group rounded-xs p-2.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3.5 cursor-pointer min-w-0"
                 aria-label="前往 Letterboxd 查看评分"
               >
                 <div
@@ -540,7 +540,7 @@ onUnmounted(() => {
                 :href="film.urls?.douban"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="logo-badge-card group rounded-sm p-2.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3.5 cursor-pointer min-w-0"
+                class="logo-badge-card group rounded-xs p-2.5 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-3.5 cursor-pointer min-w-0"
                 aria-label="前往 豆瓣 查看评分"
               >
                 <div
@@ -598,7 +598,7 @@ onUnmounted(() => {
 
           <!-- 2. 经典台词金句卡片（带背景巨型引号水印） -->
           <div
-            class="relative p-6 sm:p-7 bg-[#0d0d0d] border border-neutral-800/80 rounded-sm shadow-lg overflow-hidden my-1"
+            class="relative p-6 sm:p-7 bg-[#0d0d0d] border border-neutral-800/80 rounded-xs shadow-lg overflow-hidden my-1"
           >
             <span
               class="pointer-events-none absolute -top-3 -left-1 font-serif-cn text-7xl sm:text-8xl text-neutral-800/50 select-none leading-none"
@@ -614,7 +614,7 @@ onUnmounted(() => {
 
           <!-- 3. 双语剧情梗概 -->
           <div
-            class="p-4 sm:p-5 bg-neutral-950/90 border-l-2 border-neutral-600 rounded-r-sm space-y-2"
+            class="p-4 sm:p-5 bg-neutral-950/90 border-l-2 border-neutral-600 rounded-r-xs space-y-2"
           >
             <div class="detail-section-title">SYNOPSIS // 剧情梗概</div>
             <p class="text-xs sm:text-sm text-neutral-200 leading-relaxed">
@@ -627,7 +627,7 @@ onUnmounted(() => {
 
           <!-- 4. 个人迷影手记  -->
           <article
-            class="bg-[#0e0e0e] border border-neutral-800/90 rounded-sm p-5 sm:p-7 space-y-4 shadow-xl"
+            class="bg-[#0e0e0e] border border-neutral-800/90 rounded-xs p-5 sm:p-7 space-y-4 shadow-xl"
           >
             <div
               class="flex flex-wrap items-center justify-between gap-2 border-b border-neutral-800 pb-3"
