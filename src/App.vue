@@ -3,16 +3,26 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { FILMS, RECENT_FILMS } from './data/films.js'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
-import FilmReel from './components/FilmReel.vue'
-import FilmArchive from './components/FilmArchive.vue'
-import FilmDetail from './components/FilmDetail.vue'
+import { useRoute, useRouter } from 'vue-router'
 
-// 1. 当前显示的页面状态：'home' (放映室) | 'index' (档案馆) | 'detail' (详情页)
-const activeView = ref('home')
-const detailSourceView = ref('home')
+const route = useRoute()
+const router = useRouter()
 
-// 2. 当前选中的电影 ID（用于详情页）
-const currentDetailFilmId = ref(FILMS[0].id)
+// 当前页面由 URL 决定
+const activeView = computed(() => {
+  if (route.name === 'archive') return 'index'
+  if (route.name === 'film-detail') return 'detail'
+  if (route.name === 'not-found') return 'not-found'
+  return 'home'
+})
+
+// 当前详情页的影片 ID
+const currentDetailFilmId = computed(() => {
+  const film = FILMS.find((f) => f.slug === route.params.slug)
+  return film ? film.id : null
+})
+// 详情页来源
+const detailSourceView = computed(() => (route.query.from === 'archive' ? 'index' : 'home'))
 
 // 3. 全局暗房胶片颗粒粗糙度：'strong' | 'subtle' | 'off'
 const grainIntensity = ref('subtle')
@@ -40,19 +50,85 @@ function toggleGrain() {
 
 // 切换页面的函数
 function navigateTo(view) {
-  activeView.value = view
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+  router.push({
+    name: view === 'index' ? 'archive' : 'home'
+  })
 }
 
 // 打开某部电影的详情页
 function openFilmDetail(filmId, source = activeView.value) {
-  if (source === 'home' || source === 'index') {
-    detailSourceView.value = source
+  const film = FILMS.find((f) => f.id === Number(filmId))
+
+  if (!film) return
+
+  const target = {
+    name: 'film-detail',
+    params: { slug: film.slug },
+    query: {
+      from: source === 'index' ? 'archive' : 'home'
+    }
   }
-  currentDetailFilmId.value = filmId
-  activeView.value = 'detail'
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+
+  // 在详情页切换上一部、下一部时不增加历史记录
+  if (activeView.value === 'detail') {
+    router.replace(target)
+  } else {
+    router.push(target)
+  }
 }
+
+function backFromDetail() {
+  const target = detailSourceView.value === 'index' ? { name: 'archive' } : { name: 'home' }
+
+  router.replace(target)
+}
+
+const viewProps = computed(() => {
+  if (route.name === 'home') {
+    return {
+      films: RECENT_FILMS
+    }
+  }
+
+  if (route.name === 'archive') {
+    return {
+      films: FILMS,
+      favoritesMap: favoritesMap.value
+    }
+  }
+
+  if (route.name === 'film-detail') {
+    return {
+      films: FILMS,
+      filmId: currentDetailFilmId.value,
+      sourceView: detailSourceView.value,
+      favoritesMap: favoritesMap.value
+    }
+  }
+
+  return {}
+})
+
+function handleSelectFilm(id) {
+  const source = activeView.value === 'detail' ? detailSourceView.value : activeView.value
+
+  openFilmDetail(id, source)
+}
+
+const viewListeners = computed(() => {
+  if (route.name === 'film-detail') {
+    return {
+      'select-film': handleSelectFilm,
+      back: backFromDetail,
+      'toggle-favorite': toggleFavorite,
+      'open-archive': () => navigateTo('index')
+    }
+  }
+
+  return {
+    'select-film': handleSelectFilm
+  }
+})
 
 function toggleFavorite(filmId) {
   favoritesMap.value[filmId] = !favoritesMap.value[filmId]
@@ -85,8 +161,7 @@ function onGlobalKeyDown(e) {
 
   if (activeView.value === 'detail') {
     if (e.key === 'Escape') {
-      activeView.value = detailSourceView.value
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      backFromDetail()
     } else if (e.key === 'ArrowLeft') {
       e.preventDefault()
       const idx = FILMS.findIndex((f) => f.id === currentDetailFilmId.value)
@@ -100,8 +175,7 @@ function onGlobalKeyDown(e) {
     }
   } else if (activeView.value === 'index') {
     if (e.key === 'Escape') {
-      activeView.value = 'home'
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      navigateTo('home')
     }
   } else if (activeView.value === 'home') {
     if (e.key === 'ArrowLeft') {
@@ -110,6 +184,10 @@ function onGlobalKeyDown(e) {
     } else if (e.key === 'ArrowRight') {
       e.preventDefault()
       filmReelRef.value?.smoothStepReel(1)
+    }
+  } else if (activeView.value === 'not-found') {
+    if (e.key === 'Escape') {
+      navigateTo('home')
     }
   }
 }
@@ -144,35 +222,11 @@ onUnmounted(() => {
 
   <!-- 主内容区（根据 activeView，用 v-if 切换显示画面） -->
   <main id="appMain" class="flex-1 flex flex-col">
-    <!-- 画面 1：放映室 (Home) -->
-    <FilmReel
-      v-if="activeView === 'home'"
-      ref="filmReelRef"
-      :films="RECENT_FILMS"
-      @select-film="openFilmDetail"
-    />
-    <!-- 画面 2：档案馆 (Index) -->
-    <KeepAlive>
-      <FilmArchive
-        v-if="activeView === 'index'"
-        :films="FILMS"
-        :favorites-map="favoritesMap"
-        @select-film="openFilmDetail"
-      />
-    </KeepAlive>
-
-    <!-- 画面 3：电影详情页 (Detail) -->
-    <FilmDetail
-      v-if="activeView === 'detail'"
-      :films="FILMS"
-      :film-id="currentDetailFilmId"
-      :source-view="detailSourceView"
-      :favorites-map="favoritesMap"
-      @back="activeView = detailSourceView"
-      @select-film="(id) => openFilmDetail(id, detailSourceView)"
-      @toggle-favorite="toggleFavorite"
-      @open-archive="activeView = 'index'"
-    />
+    <RouterView v-slot="{ Component }">
+      <KeepAlive include="FilmArchive">
+        <component :is="Component" v-bind="viewProps" v-on="viewListeners" />
+      </KeepAlive>
+    </RouterView>
   </main>
 
   <button

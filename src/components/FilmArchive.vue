@@ -1,4 +1,8 @@
 <script setup>
+defineOptions({
+  name: 'FilmArchive'
+})
+
 import { ref, computed } from 'vue'
 import { RECENT_COUNT } from '../data/films.js'
 import { namesZh } from '../data/format.js'

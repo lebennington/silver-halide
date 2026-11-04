@@ -1,5 +1,5 @@
 import rawFilms from './films.json'
-import { validateFilms, parseWatchedDate, filmPoster } from './validate.js'
+import { validateFilms, parseWatchedDate, filmPoster, filmSlug } from './validate.js'
 import { namesBilingual } from './format.js'
 
 // 放映室展映数量
@@ -12,7 +12,8 @@ rawFilms.sort((a, b) => (parseWatchedDate(b) || '').localeCompare(parseWatchedDa
 rawFilms.forEach((film, idx) => {
   film.frameCode = String(idx + 1).padStart(2, '0')
   film.recent = idx < RECENT_COUNT
-  film.poster = filmPoster(film)
+  film.slug = `${filmSlug(film.titleOrig)}-${film.year}`
+  film.poster = `${import.meta.env.BASE_URL}${filmPoster(film)}`
   film._searchPool = [
     film.titleCn,
     film.titleOrig,
