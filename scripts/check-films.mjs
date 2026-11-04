@@ -20,6 +20,14 @@ for (const e of errors) {
 for (const w of warnings) console.warn('⚠️  ' + w)
 
 for (const film of films) {
+  // 必要字段缺失的记录已由 validateFilms 报错，跳过海报检查，避免派生出无效路径
+  if (
+    typeof film.titleOrig !== 'string' ||
+    film.titleOrig.trim() === '' ||
+    !Number.isInteger(film.year)
+  ) {
+    continue
+  }
   const poster = filmPoster(film)
   if (!existsSync(resolve(root, 'public', poster))) {
     failed = true

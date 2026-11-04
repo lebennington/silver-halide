@@ -40,9 +40,9 @@ const filterTabs = computed(() => {
   ]
 })
 
-// 3. ⭐ 核心“全自动漏斗”：根据分类、搜索词、排序规则，实时算出要展示的电影列表
+// 3. 根据分类、搜索词、排序规则，实时算出要检索结果
 const filteredFilms = computed(() => {
-  const q = searchQuery.value.trim().toLowerCase()
+  const keywords = searchQuery.value.trim().toLowerCase().split(/\s+/).filter(Boolean)
 
   // 第一层 + 第二层漏斗：分类与关键词过滤
   const list = props.films.filter((film) => {
@@ -50,7 +50,7 @@ const filteredFilms = computed(() => {
     if (currentFilter.value === 'archive' && film.recent) return false
     if (currentFilter.value === 'fav' && !props.favoritesMap[film.id]) return false
 
-    if (q && !film._searchPool.includes(q)) return false
+    if (keywords.length && !keywords.every((kw) => film._searchPool.includes(kw))) return false
     return true
   })
 

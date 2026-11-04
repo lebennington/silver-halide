@@ -25,11 +25,12 @@ export const parseWatchedDate = (film) => {
 }
 // —— 海报 slug 派生（posters/{slug}-{year}.jpg）——
 const englishTitle = (titleOrig) => {
-  const slashIdx = titleOrig.lastIndexOf(' / ')
-  if (slashIdx !== -1) return titleOrig.slice(slashIdx + 3).trim()
-  const parenMatch = titleOrig.match(/\(([^()]*)\)\s*$/)
+  const title = typeof titleOrig === 'string' ? titleOrig : ''
+  const slashIdx = title.lastIndexOf(' / ')
+  if (slashIdx !== -1) return title.slice(slashIdx + 3).trim()
+  const parenMatch = title.match(/\(([^()]*)\)\s*$/)
   if (parenMatch) return parenMatch[1].trim()
-  return titleOrig.trim()
+  return title.trim()
 }
 const slugify = (s) =>
   s
@@ -45,7 +46,11 @@ const SLUG_OVERRIDES = {
 }
 export const filmSlug = (titleOrig) => SLUG_OVERRIDES[titleOrig] || slugify(englishTitle(titleOrig))
 // 海报相对路径：posters/{slug}-{year}.jpg
-export const filmPoster = (film) => 'posters/' + filmSlug(film.titleOrig) + '-' + film.year + '.jpg'
+export const filmPoster = (film) => {
+  const f = film || {}
+  const year = Number.isInteger(f.year) ? f.year : ''
+  return 'posters/' + filmSlug(f.titleOrig) + '-' + year + '.jpg'
+}
 
 // 各平台评分范围
 const RATING_RANGES = { imdb: [1, 10], letterboxd: [0, 5], douban: [1, 10] }

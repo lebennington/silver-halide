@@ -142,7 +142,7 @@ onUnmounted(() => {
     @toggle-grain="toggleGrain"
   />
 
-  <!-- 主内容区（根据 activeView 的值，用 v-if 自动切换显示的画面！） -->
+  <!-- 主内容区（根据 activeView，用 v-if 切换显示画面） -->
   <main id="appMain" class="flex-1 flex flex-col">
     <!-- 画面 1：放映室 (Home) -->
     <FilmReel
@@ -152,16 +152,18 @@ onUnmounted(() => {
       @select-film="openFilmDetail"
     />
     <!-- 画面 2：档案馆 (Index) -->
-    <FilmArchive
-      v-else-if="activeView === 'index'"
-      :films="FILMS"
-      :favorites-map="favoritesMap"
-      @select-film="openFilmDetail"
-    />
+    <KeepAlive>
+      <FilmArchive
+        v-if="activeView === 'index'"
+        :films="FILMS"
+        :favorites-map="favoritesMap"
+        @select-film="openFilmDetail"
+      />
+    </KeepAlive>
 
     <!-- 画面 3：电影详情页 (Detail) -->
     <FilmDetail
-      v-else-if="activeView === 'detail'"
+      v-if="activeView === 'detail'"
       :films="FILMS"
       :film-id="currentDetailFilmId"
       :source-view="detailSourceView"
